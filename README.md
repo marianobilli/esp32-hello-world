@@ -1,6 +1,8 @@
 # ESP32 Hello World — PlatformIO
 
-A starter project for the **YD-ESP32-23** board using the **Arduino framework** on **PlatformIO**.
+A basic example for the **YD-ESP32-23** board that flashes the onboard RGB LED in red and blue like a police car light bar.
+
+The firmware alternates three quick red flashes and three quick blue flashes in a continuous loop, using the built-in NeoPixel on GPIO 48 and the `neopixelWrite()` helper provided by the Arduino-ESP32 framework.
 
 - **Board:** YD-ESP32-23 (ESP32-S3 DevKitC-1 clone)
 - **Flash:** 16 MB

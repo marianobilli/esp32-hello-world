@@ -1,6 +1,11 @@
 #include <Arduino.h>
 
-// Onboard RGB NeoPixel is on GPIO 48 (ESP32-S3 DevKitC-1 / YD-ESP32-23).
+// Police-car LED flasher — basic example for the YD-ESP32-23 (ESP32-S3).
+//
+// Flashes the onboard RGB NeoPixel (GPIO 48) alternating red and blue bursts,
+// mimicking a police car light bar: three quick red flashes, a short pause,
+// then three quick blue flashes, repeated indefinitely.
+//
 // neopixelWrite(pin, red, green, blue) is provided by the Arduino-ESP32 framework.
 
 static const uint8_t LED_PIN       = 48;
